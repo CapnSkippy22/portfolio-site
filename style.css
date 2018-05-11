@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body {
+    background-color: #333333;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+    margin: auto;
+}
+
+.main {
+  overflow: hidden;
+  height: 950px;
+  width: 100%;
+  position: relative;
+}
+
+div {
+  margin: auto;
+  /* border: 2px solid red; */
+}
+
+span {
+  margin: auto;
+  /* border: 2px solid red; */
+}
+
+.header {
+  margin: auto;
+  text-align: center;
+  width: 600px;
+  height: 50px;
+  padding: 20px;
+}
+
+.menu-item {
+  padding: 10px;
+}
+
+.fa-home {
+  padding: 10px;
+}
+
+#mainLogo {
+  position: relative;
+  top: 300px;
+  margin: auto;
+  display: block;
+  width: 75%;
+  top: 150px;
+}
+
+/* Ocean CSS */
+
+.wave {
+  background: url('wavey.svg') repeat-x;
+  position: absolute;
+  top: 600px;
+  width: 5750px;
+  height: 400px;
+  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+  opacity: .5;
+}
+
+.wave:nth-of-type(2) {
+  animation: wave 5s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+}
+
+.wave:nth-of-type(3) {
+  animation: wave 6s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -3000px;
+  }
+}
+
+@keyframes swell {
+  0%, 100% {
+    transform: translate3d(0,-25px,0);
+  }
+  50% {
+    transform: translate3d(0,5px,0);
+  }
+}
